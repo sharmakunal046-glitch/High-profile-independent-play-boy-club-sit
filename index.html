@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Profile Playboy Service Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>High Profile Playboy Service Booking</h1>
+        <nav>
+            <ul>
+                <li><a href="#client">Client Page</a></li>
+                <li><a href="#playboy">Playboy Page</a></li>
+                <li><a href="#admin">Admin Page</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="client">
+        <h2>Client Page</h2>
+        <form action="book_service.php" method="POST">
+            <label for="clientName">Name:</label>
+            <input type="text" id="clientName" name="clientName" required>
+            <label for="serviceDate">Service Date:</label>
+            <input type="date" id="serviceDate" name="serviceDate" required>
+            <button type="submit">Book Service</button>
+        </form>
+    </section>
+
+    <section id="playboy">
+        <h2>Playboy Page</h2>
+        <div class="playboy-profile">
+            <h3>Playboy Name</h3>
+            <img src="playboy.jpg" alt="Playboy Image">
+            <p>Description of the playboy.</p>
+            <button>Contact</button>
+        </div>
+    </section>
+
+    <section id="admin">
+        <h2>Admin Page</h2>
+        <form action="upload_video.php" method="POST" enctype="multipart/form-data">
+            <label for="videoUpload">Upload Video:</label>
+            <input type="file" id="videoUpload" name="videoUpload" accept="video/*" required>
+            <button type="submit">Upload</button>
+        </form>
+        <div class="chat-system">
+            <h3>Chat System</h3>
+            <textarea id="chatBox" rows="5" placeholder="Type your message..."></textarea>
+            <button>Send</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 High Profile Playboy Service Booking. All rights reserved.</p>
+    </footer>
+</body>
+</html>
